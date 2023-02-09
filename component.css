@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Html */
+:root {
+    --bg-color: #272D33;
+    --heading: #8DBBD7;
+    --border: #BCAD56;
+    --white: #fff;
+}
+/* Body */
+body {
+    background: var(--bg-color);
+}
+/* Spring content */
+.spring-content {
+    width: 400px;
+    height: 80vh;
+    background-image: url("./5pylakgbl9341.webp");
+    background-size: cover;
+    background-position: bottom center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #15191c;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+    .spring-title h1 {
+        text-transform: uppercase;
+        color: #8DBBD7;
+        font-size: 24px;
+        padding-bottom:  20px;
+        margin-bottom:  20px;
+        padding-top: 40px;
+        position: relative;
+    }
+    .spring-title h1::before {
+        content: "";
+        width: 60px;
+        height: 4px;
+        border-radius: 5px;
+        background: var(--border);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .spring-title p {
+        color: #fff;
+    }
+    .spring-date {
+        display: flex;
+        align-items: end;
+    }
+    .spring-date {
+        display: flex;
+        align-items: center;
+    }
+    .spring-date i {
+        color: var(--border);
+        margin-right: 1px;
+    }
+    .spring-date span {
+        color: #fff;
+        margin-right: 10px;
+    }
+    .spring-para p {
+        color: #fff;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding: 0 70px;
+        background: #000000b9;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    .spring-para:hover p {
+        transform: translate(-50%, -60%);
+        opacity: 1;
+    }
